@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio Bucles 2</title>
+
+
+</head>
+
+<body>
+    <h1>Ejercicio Bucles 2</h1>
+
+    <ul>
+        <?php
+            $a = 100;
+            while ($a >= 85) {
+                echo "<li>" . $a . "</li>";
+                $a--;
+            }
+        ?>
+    </ul>
+
+
+</body>
+
+</html>
