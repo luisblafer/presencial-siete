@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -12,6 +12,17 @@
 
 <body>
     <h1>Ejercicio Bucles 5</h1>
+    <h2>Consigna</h2>
+    <p>
+        Definir un array con 5 strings que sean nombres. Recorrer este array para imprimir cada
+        uno de los nombres en pantalla.</p>
+    <ol type="a">
+        <li>Resolver este problema con un <b>for</b>.</li>
+        <li>Resolver este problema con <b>while</b>.</li>
+        <li>Resolver este problema con un <b>do/while</b>.</li>
+        <li>Resolver este problema con un <b>foreach</b>.</li>
+    </ol>
+
     <?php
         $nombres = [
             0 => "Nicolás",
@@ -21,8 +32,9 @@
             4 => "Luis",
         //    5 => "<b>Diputado</b> Paulo Londra"
         ];
-        echo count($nombres);
+        echo "<p>Cantidad de Nombres: <b>" . count($nombres) . "</b></p>";
     ?>
+    
     <hr>
     <h2>Resolución con bucle For</h2>
     <p>Nombres:</p>
