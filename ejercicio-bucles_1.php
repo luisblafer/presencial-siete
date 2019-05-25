@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,11 @@
 
 <body>
     <h1>Ejercicio Bucles 1</h1>
+    <h2>Consigna</h2>
+    <p>Mostrar la tabla de multiplicar del 2 utilizando un <b>for</b>.</p>
 
+    <hr>
+    <h2>Resultado</h2>
     <ul>
         <?php
             $tablaDeDos = [];
