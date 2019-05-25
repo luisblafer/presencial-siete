@@ -12,27 +12,52 @@
 
 <body>
     <h1>Ejercicio Bucles 6</h1>
+    <h2>Consigna</h2>
+    <p>Definir un <b>array</b> con 10 números aleatorios entre 0 y 10. Recorrer este array para imprimir
+        todos los números. La ejecución debe terminarse si alguno de los números encontrados es
+        un 5 (Se debe imprimir “Se encontró un 5!”)</p>
+
+    <hr>
+    <h2>Resultado</h2>
     <?php
         $numeros = [];
         for ($i=0; $i <10 ; $i++) { 
             $numeros[] = rand(0,10);
         }
-    echo $i;
-    var_dump($numeros);
     ?>
 
-
-<ul>
+    <h3>Números en Array (Recorrido completo)</h3>
+    <ul>
+        <?php
+            foreach ($numeros as $index => $numero) {
+                echo "<li>" . $index . " &rArr; " . $numero ."</li>";
+            }
+        ?>
+    </ul>
     <?php
-        $tiros = 0;
-        while ($acumulado < 5) {
-            $moneda = rand(0,1);
-            $tiros++;
-            $acumulado = $acumulado + $moneda;
-        }
-        echo "<li>Cantidad de Tiros: " . $tiros . "</li>";
+        echo "<p>Cantidad de elementos en el Array: <b>" . count($numeros) . "</b></p>";
     ?>
-</ul>
+
+    <h3>Números en Array (Recorrido con corte)</h3>
+    <ul>
+        <?php
+            foreach ($numeros as $index => $numero) {
+                echo "<li>" . $index . " &rArr; " . $numero ."</li>";
+
+                /* Posiciono el condicional IF luego del echo de elementos
+                para que se vea claro que el elemento del array contiene un 5.
+                 */
+                if ($numero == 5) {
+                    echo "</ul><p>¡Se encontró un <b>5</b>!</p>.";
+                    break;
+                }
+            }
+        ?>
+    </ul>
+    <?php
+        echo "<p>Cantidad de elementos en el Array: <b>" . count($numeros) . "</b></p>";
+    ?>
+
 </body>
 
 </html>
