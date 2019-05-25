@@ -17,7 +17,7 @@
 cuantos números son pares.</p>
 
     <hr>
-    <h2>Resultados</h2>
+    <h2>Resultado</h2>
     <?php
         $numeros = [];
         for ($i=0; $i <10 ; $i++) { 
