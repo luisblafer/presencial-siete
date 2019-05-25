@@ -42,13 +42,13 @@
     <ul>
         <?php
             foreach ($numeros as $index => $numero) {
-                echo "<li>" . $index . " &rArr; " . $numero ."</li>";
+                echo "<li>" . $index . " &rArr; " . $numero . "</li>";
 
                 /* Posiciono el condicional IF luego del echo de elementos
                 para que se vea claro que el elemento del array contiene un 5.
                  */
                 if ($numero == 5) {
-                    echo "</ul><p>¡Se encontró un <b>5</b>!</p>.";
+                    echo "</ul><p>¡Se encontró un <b>5</b>!</p>";
                     break;
                 }
             }
