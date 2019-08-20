@@ -25,6 +25,7 @@
                 echo "<li>2 x " . $i . " = " . $tablaDeDos[$i] . "</li>"; 
             }
         ?>
+        a
     </ul>
 
 
